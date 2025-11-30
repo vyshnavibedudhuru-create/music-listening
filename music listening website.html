@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Listening Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: #fff;
+    }
+
+    header {
+      background: #1db954;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #1a1a1a;
+      padding: 12px;
+      gap: 25px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d') center/cover no-repeat;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .section {
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    .music-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin-top: 15px;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+      outline: none;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: #1db954;
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<header>Music Listening Platform 🎧</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#popular">Popular</a>
+  <a href="#albums">Albums</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">Feel the Music. Enjoy Every Beat. 🎶</div>
+
+<section class="section" id="popular">
+  <h2>Popular Tracks</h2>
+  <div class="music-grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" />
+      <h3>Electronic Vibes</h3>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1513863323965-1078f7a1c2e0" />
+      <h3>Calm Piano Mix</h3>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1483412033650-1015ddeb83d1" />
+      <h3>Rock Beats</h3>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="albums">
+  <h2>Featured Albums</h2>
+  <div class="music-grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1524671710111-1e9178b6d90c" />
+      <h3>Chill Collection</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d" />
+      <h3>Night Drive</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1497032205916-ac775f0649ae" />
+      <h3>Classic Hits</h3>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <p style="text-align:center; font-size:20px;">📧 support@musiclisten.com<br>📞 +91 98765 43210</p>
+</section>
+
+<footer>© 2025 Music Listening Platform | All Rights Reserved</footer>
+
+</body>
+</html>
